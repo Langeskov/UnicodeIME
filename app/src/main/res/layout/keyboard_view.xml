@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/preview_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        android:padding="9dp"
+        android:text="Unicode码: \nChar: "
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keyPreviewLayout="@layout/keyboard_preview"
+        android:keyBackground="@drawable/key_background"
+        android:keyTextColor="#000000"
+        android:labelTextSize="18sp"
+        android:verticalCorrection="0dp"
+        android:popupLayout="@layout/keyboard_popup" />
+</LinearLayout>
